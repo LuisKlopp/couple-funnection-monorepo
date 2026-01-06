@@ -8,6 +8,21 @@ importers:
 
   .:
     devDependencies:
+      '@eslint/js':
+        specifier: ^9.39.1
+        version: 9.39.2
+      eslint:
+        specifier: ^9.39.1
+        version: 9.39.2(jiti@2.6.1)
+      eslint-plugin-react:
+        specifier: ^7.37.5
+        version: 7.37.5(eslint@9.39.2(jiti@2.6.1))
+      eslint-plugin-react-hooks:
+        specifier: ^5.2.0
+        version: 5.2.0(eslint@9.39.2(jiti@2.6.1))
+      eslint-plugin-simple-import-sort:
+        specifier: ^12.1.1
+        version: 12.1.1(eslint@9.39.2(jiti@2.6.1))
       prettier:
         specifier: ^3.7.4
         version: 3.7.4
@@ -17,6 +32,9 @@ importers:
       typescript:
         specifier: 5.9.2
         version: 5.9.2
+      typescript-eslint:
+        specifier: ^8.50.0
+        version: 8.51.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.2)
 
   apps/couple-funnection:
     dependencies:
@@ -774,6 +792,11 @@ packages:
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
+
+  eslint-plugin-simple-import-sort@12.1.1:
+    resolution: {integrity: sha512-6nuzu4xwQtE3332Uz0to+TxDQYRLTKRESSc2hefVT48Zc8JthmN23Gx9lnYhu0FtkRSL1oxny3kJ2aveVhmOVA==}
+    peerDependencies:
+      eslint: '>=5.0.0'
 
   eslint-plugin-turbo@2.7.2:
     resolution: {integrity: sha512-rZs+l0vQcFo/37OiCWDcTIcksrVfvSBwS6/CI41wc3hA/hWxGOAbT1Diy9/+PBrh2VJts0SzBXb80SqGgVFFPQ==}
@@ -2230,6 +2253,10 @@ snapshots:
       semver: 6.3.1
       string.prototype.matchall: 4.0.12
       string.prototype.repeat: 1.0.0
+
+  eslint-plugin-simple-import-sort@12.1.1(eslint@9.39.2(jiti@2.6.1)):
+    dependencies:
+      eslint: 9.39.2(jiti@2.6.1)
 
   eslint-plugin-turbo@2.7.2(eslint@9.39.2(jiti@2.6.1))(turbo@2.7.2):
     dependencies:
