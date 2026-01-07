@@ -18,6 +18,9 @@ const config = {
       padding: "2rem",
     },
     extend: {
+      transitionTimingFunction: {
+        smooth: "cubic-bezier(0.22, 1, 0.36, 1)",
+      },
       perspective: {
         none: "none",
         1000: "1000px",

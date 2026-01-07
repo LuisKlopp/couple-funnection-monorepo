@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="relative h-dvh w-full overflow-hidden">
       <div
-        className="flex h-full w-[200%] transition-transform duration-300 ease-in-out"
+        className="flex h-full w-[200%] transition-transform duration-700 ease-[cubic-bezier(0.65,0,0.35,1)]"
         style={{
           transform: step === 0 ? "translateX(0%)" : "translateX(-50%)",
         }}

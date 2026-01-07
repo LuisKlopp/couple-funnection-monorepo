@@ -18,7 +18,7 @@ const PrimaryButton = ({
   return (
     <button
       className={cn(
-        "bg-primaryColor w-60 max-w-sm rounded-xl py-3 text-base font-semibold text-white shadow-md transition hover:opacity-90",
+        "bg-primaryColor w-60 rounded-xl py-3 text-base font-semibold text-white shadow-md transition hover:opacity-90",
         (disabled || isLoading) && "cursor-not-allowed opacity-50",
         className
       )}
