@@ -1,6 +1,6 @@
 import { Clock, Heart, MessageCircleMore } from "lucide-react";
 
-import PrimaryButton from "@/components/PrimaryButton";
+import { PrimaryButton } from "@/components/PrimaryButton";
 
 import { FormTitle } from "../form/FormTitle";
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import PrimaryButton from "@/components/PrimaryButton";
+import { PrimaryButton } from "@/components/PrimaryButton";
 import { FormData } from "@/types/formData.types";
 
 import { FormArea } from "./FormArea";
@@ -25,6 +25,13 @@ export const FormPage = ({ onBack }: FormPageProps) => {
     maleNickname: "",
     expectation: "",
   });
+
+  const isFormValid =
+    formData.years.trim() !== "" &&
+    formData.femaleNickname.trim() !== "" &&
+    formData.maleNickname.trim() !== "" &&
+    formData.expectation.trim() !== "" &&
+    !!formData.photo;
 
   const updateField = <K extends keyof FormData>(
     key: K,
@@ -106,6 +113,7 @@ export const FormPage = ({ onBack }: FormPageProps) => {
         className="w-full"
         onClick={handleSubmit}
         title="신청서 제출하기"
+        disabled={!isFormValid}
       />
     </FormPageLayout>
   );

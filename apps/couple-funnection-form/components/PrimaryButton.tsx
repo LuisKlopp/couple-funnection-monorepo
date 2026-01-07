@@ -8,7 +8,7 @@ export interface PrimaryButtonProps extends ButtonHTMLAttributes<HTMLButtonEleme
   isLoading?: boolean;
 }
 
-const PrimaryButton = ({
+export const PrimaryButton = ({
   title,
   isLoading = false,
   className,
@@ -18,8 +18,8 @@ const PrimaryButton = ({
   return (
     <button
       className={cn(
-        "bg-primaryColor w-60 rounded-xl py-3 text-base font-semibold text-white shadow-md transition hover:opacity-90",
-        (disabled || isLoading) && "cursor-not-allowed opacity-50",
+        "bg-primaryColor w-60 cursor-pointer rounded-xl py-3 text-base font-semibold text-white shadow-md transition hover:opacity-90",
+        (disabled || isLoading) && "pointer-events-none opacity-50",
         className
       )}
       disabled={disabled || isLoading}
@@ -29,5 +29,3 @@ const PrimaryButton = ({
     </button>
   );
 };
-
-export default PrimaryButton;

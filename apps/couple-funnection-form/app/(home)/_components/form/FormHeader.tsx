@@ -7,7 +7,10 @@ interface FormHeaderProps {
 export const FormHeader = ({ onBack }: FormHeaderProps) => {
   return (
     <div className="relative flex h-10 w-full items-center justify-center">
-      <ArrowLeft className="absolute left-0" onClick={onBack} />
+      <ArrowLeft
+        className="text-primaryColor absolute left-0 cursor-pointer"
+        onClick={onBack}
+      />
       <span className="text-[18px] font-semibold">커플 퍼넥션 신청서</span>
     </div>
   );
